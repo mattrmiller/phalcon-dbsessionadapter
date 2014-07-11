@@ -50,7 +50,7 @@ class DbSessionAdapter extends \Phalcon\Session\Adapter implements \Phalcon\Sess
 	private function _getSession($sSessionId)
 	{
 		// Find session
-        $oSession = \AppScout\Models\Sessions::query()
+        $oSession = Sessions::query()
 	        ->where('uuid = :uuid:')
 		    ->bind(array(
 			    'uuid' => $sSessionId
@@ -115,7 +115,7 @@ class DbSessionAdapter extends \Phalcon\Session\Adapter implements \Phalcon\Sess
 		// Find session
         $oSession = $this->_getSession($sSessionId);
 	    if (empty($oSession)) {
-		    $oSession = new \AppScout\Models\Sessions();
+		    $oSession = new Sessions();
 		    $oSession->uuid = $sSessionId;
 	    }
 
@@ -165,7 +165,7 @@ class DbSessionAdapter extends \Phalcon\Session\Adapter implements \Phalcon\Sess
 	public function gc($iMaxLifetime)
 	{
 		// Find sessions
-        $oSessions = \AppScout\Models\Sessions::query()
+        $oSessions = Sessions::query()
 	        ->where('UNIX_TIMESTAMP(date_modified) <= :maxlife:')
 		    ->bind(array(
 			    'maxlife' => $iMaxLifetime
