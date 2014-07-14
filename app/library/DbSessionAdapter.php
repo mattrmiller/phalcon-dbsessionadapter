@@ -1,4 +1,10 @@
 <?php
+/**
+ * Copyright 2014 Classy Geeks llc. All Rights Reserved
+ * http://classygeeks.com
+ * MIT License:
+ * http://opensource.org/licenses/MIT
+ */
 
 /**
  * Class DbSessionAdapter
