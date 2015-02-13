@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2014 Classy Geeks llc. All Rights Reserved
+ * Copyright 2015 Classy Geeks llc. All Rights Reserved
  * http://classygeeks.com
  * MIT License:
  * http://opensource.org/licenses/MIT

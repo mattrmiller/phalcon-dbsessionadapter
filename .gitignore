@@ -11,4 +11,13 @@ sftp-*
 __MACOSX
 
 # Ide's
-.idea
+/.idea
+/*.iml
+
+# Gem lock
+/Gemfile.lock
+
+# Composer
+/composer.phar
+/composer.lock
+/vendor
