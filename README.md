@@ -2,12 +2,14 @@
 
 Phalcon PHP - Database Session adapter using a Model.
 
-# Copy Code into Respective Folders
+# Installation
+
+1) Copy Code into Respective Folders
 
  - /app/Library/* 
  - /app/Models/*
 
-# Database Table
+2) Database Table
 
 ```sql
 CREATE TABLE `sessions` (
@@ -23,7 +25,7 @@ CREATE TABLE `sessions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 ```
 
-# Setup Service
+3) Setup Service
 ```php
 $di->set('session', function () use ($oConfig) {
 
@@ -40,7 +42,7 @@ $di->set('session', function () use ($oConfig) {
 	});
 ```
 
-# Use Like Regular Phalcon Sessions
+4) Use Like Regular Phalcon Sessions
 
 ```php
 $this->session->set('enjoy_our_code', 'ok');
