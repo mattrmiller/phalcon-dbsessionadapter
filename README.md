@@ -1,16 +1,13 @@
-phalconphp-dbsessionadapter
-===========================
+# phalconphp-dbsessionadapter
 
 Phalcon PHP - Database Session adapter using a Model.
 
-1) Copy Code into Respective Folders
-------------------------------------
+# Copy Code into Respective Folders
 
  - /app/Library/* 
  - /app/Models/*
 
-2) Database Table
------------------
+# Database Table
 
 ```sql
 CREATE TABLE `sessions` (
@@ -26,8 +23,7 @@ CREATE TABLE `sessions` (
 ) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 ```
 
-3) Setup Service
-----------------
+# Setup Service
 ```php
 $di->set('session', function () use ($oConfig) {
 
@@ -44,9 +40,14 @@ $di->set('session', function () use ($oConfig) {
 	});
 ```
 
-4) Use Like Regular Phalcon Sessions
-------------------------------------
+# Use Like Regular Phalcon Sessions
 
 ```php
 $this->session->set('enjoy_our_code', 'ok');
 ```
+
+# License
+[MIT License](LICENSE)
+
+# Author
+[Matthew R. Miller](https://github.com/mattrmiller)
