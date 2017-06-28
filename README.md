@@ -48,8 +48,16 @@ $di->set('session', function () use ($oConfig) {
 $this->session->set('enjoy_our_code', 'ok');
 ```
 
-# License
-[MIT License](LICENSE)
+# Rules For Contributing
+- Please make sure all changed files are run through gofmt
+- Submit a PR for review
+- Your name will be added below to Contributors
 
 # Author
 [Matthew R. Miller](https://github.com/mattrmiller)
+
+# Contributors
+[Matthew R. Miller](https://github.com/mattrmiller)
+
+# License
+[MIT License](LICENSE)
